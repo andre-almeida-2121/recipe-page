@@ -56,8 +56,8 @@ p {
   background-color: var(--white);
   padding: 2.3rem;
   border-radius: 1rem;
-  max-width: 700px;
-  margin: 0 auto;
+  max-width: min(43.75rem, 90%);
+  margin: 5rem auto;
 }
 
 .omelette-illustration {

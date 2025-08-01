@@ -1,7 +1,12 @@
 /* Variables */
 :root {
   --stone-hundred: hsl(30, 54%, 90%);
+  --stone-hundred-fifty: hsl(30, 18%, 87%);
+  --stone-six-hundred: hsl(30, 10%, 34%);
+  --stone-nine-hundred: hsl(24, 5%, 18%);
   --white: hsl(0, 0%, 100%);
+  --brown-eight-hundred: hsl(14, 45%, 36%);
+  --rose-eight-hundred: hsl(332, 51%, 32%);
   --rose-fifty: hsl(330, 100%, 98%);
 }
 
@@ -14,14 +19,116 @@
 
 body {
   font-family: "Outfit", sans-serif;
-  background-color: hsl(30, 54%, 90%);
+  font-size: 1rem;
+  background-color: var(--stone-hundred);
+  color: var(--stone-six-hundred);
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* Typhography */
+
+h1 {
+  color: var(--stone-nine-hundred);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  color: var(--brown-eight-hundred);
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+
+p {
+  margin-bottom: 1rem;
 }
 
 /* Components */
 
 .card {
-  background-color: hsl(330, 100%, 98%);
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
 }
+
+.omelette-illustration {
+  width: 100%;
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.prep-time {
+  background-color: var(--rose-fifty);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+.prep-time h2 {
+  color: var(--rose-eight-hundred);
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.prep-time li::marker {
+  color: var(--rose-eight-hundred);
+}
+
+/* Nutrition Table */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+tr {
+  border-bottom: 1px solid var(--stone-hundred-fifty);
+}
+
+td {
+  padding: 0.75rem 0;
+}
+
+td:first-child {
+  color: var(--stone-six-hundred);
+}
+
+td:last-child {
+  color: var(--brown-eight-hundred);
+  font-weight: 700;
+  text-align: right;
+}
+
+/* Markers */
+
+ul,
+ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+ul li,
+ol li {
+  margin-bottom: 0.5rem;
+}
+
+ul li::marker,
+ol li::marker {
+  color: var(--brown-eight-hundred);
+}
+
+/* Attribution */
 
 .attribution {
   position: bottom;
